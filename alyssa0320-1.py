@@ -16,7 +16,5 @@ sentence = [ '猫が魚を食べる','彼女が花を買う','子供たちが公
 for i in sentence:
     print(extract_subject(i),"\n")
 
-#print(sentence)
-
 
 
