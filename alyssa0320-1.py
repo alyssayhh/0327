@@ -2,20 +2,20 @@
 def extract_subject(sentence,i):
     ga_index = sentence.find("が")
 
-if ga_index != -1:
-    subject = sentence[:ga_index].strip()
-else:
-    subject = "No subject found"
+    if ga_index != -1:
+        subject = sentence[:ga_index].strip()
+    else:
+        subject = "No subject found"
 
 def extract_subject(sentence):
     wo_index = sentence.find("を")
 
-if wo_index != -1:
-    subject = sentence[:wo_index].strip()
-else:
-    subject = "No subject found"
-    
-    return subject
+    if wo_index != -1:
+        subject = sentence[:wo_index].strip()
+    else:
+        subject = "No subject found"
+        
+        return subject
 
 # test case
 
