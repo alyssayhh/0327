@@ -1,11 +1,12 @@
-with open
+with open(file = "untitled-1.py", mode="r", encoding="utf-8") as f
+inputList = f.readlines()
 def caseparse(inputLIST):
     results = []
 
     for inputSTR in inputLIST:
         resultDICT = {
             "Subject": None,
-            "Object": None,
+            "Object": [],
             "Verb": []
         }
 
